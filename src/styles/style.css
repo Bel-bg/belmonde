@@ -1,0 +1,702 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+:root {
+  --primary-color: #e96224;
+  --hover-color: #ff6600;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0b0c10;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.photo {
+  background-image: url('../assets/me.webp');
+  background-size: cover;     
+  background-position: center; 
+  width: 250px;
+  height: 250px;            
+}
+
+/* --------------------------------------------------------------------------
+   1. ZONE ACCUEIL (HEADER) : BACKGROUND IMAGE BLACK.JPG  github
+   -------------------------------------------------------------------------- */
+.section-header-bg {
+  background-image: url("../assets/black.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.Header {
+  background: transparent !important;
+  color: #ffffff;
+  position: relative;
+}
+
+.Header h1 {
+  color: #ffffff !important;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -1px;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+.Header .line-1 {
+  color: #e0e0e0 !important;
+  border-right-color: var(--primary-color) !important;
+}
+
+/* --------------------------------------------------------------------------
+   2. ZONE À PROPOS (ABOUT) : BACKGROUND IMAGE WHITE.JPG 
+   -------------------------------------------------------------------------- */
+.section-about-bg {
+  background-image: url("../assets/white.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+}
+
+#about.effect2 {
+  background: rgba(255, 255, 255, 0.95) !important;
+  color: #222222 !important;
+  border-radius: 12px;
+}
+
+#about .about-text {
+  color: #333333 !important;
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+#about h1.red-line {
+  color: var(--primary-color) !important;
+}
+
+#about .skill__square i,
+#about .skill__square svg {
+  color: #555555 !important;
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease;
+}
+
+#about .skill__square:hover i,
+#about .skill__square:hover svg {
+  color: var(--primary-color) !important;
+  transform: translateY(-4px);
+}
+
+#about .skill__square h6 {
+  color: #222222 !important;
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
+   3. ZONE PROJETS (WORKS) : BACKGROUND IMAGE BLACK.JPG 
+   -------------------------------------------------------------------------- */
+.section-works-bg {
+  background-image: url("../assets/dark.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+}
+
+.third {
+  background-color: rgba(13, 15, 18, 0.9) !important;
+  border-radius: 12px;
+  padding: 50px 30px !important;
+  margin: 40px auto !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.third .pp-head {
+  color: #ffffff !important;
+}
+
+.third .project-card {
+  margin-bottom: 30px;
+}
+
+.third .project-card h2 {
+  color: #ffffff !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  margin-top: 10px;
+  transition: color 0.2s ease;
+}
+
+.third .project-card h2:hover {
+  color: var(--hover-color) !important;
+}
+
+.third .project-card h3 {
+  color: #a0aec0 !important;
+  font-size: 0.95rem;
+}
+
+.third .image-project {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* --------------------------------------------------------------------------
+   4. ZONE CONTACT : MODE CLAIR ORIGINAL PRÉSERVÉ (AVEC PARALLAX ET CARTE BLANCHE)
+   -------------------------------------------------------------------------- */
+.parallax {
+  /* Le style original du template est conservé :
+     - Fond avec image en background-attachment: fixed (effet parallaxe natif)
+     - Boîte formulaire .git-form blanche lumineuse (.git-form { background-color: #fff }) */
+  position: relative;
+}
+
+.git-form {
+  background-color: #ffffff !important;
+  border-radius: 10px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.git-head-div {
+  color: #000000 !important;
+  border-bottom: 3px solid #000000 !important;
+}
+
+.git-form p.lead {
+  color: #333333 !important;
+}
+
+.git-form input,
+.git-form textarea {
+  border: 1px solid #777 !important;
+  background-color: #ffffff !important;
+  color: #222222 !important;
+}
+
+.git-form input:focus,
+.git-form textarea:focus {
+  border-color: var(--primary-color) !important;
+}
+
+.Copy {
+  color: #ffffff !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* --------------------------------------------------------------------------
+   5. COMPOSANT DÉTAILS DU PROJET (PROJECT MODAL & OVERLAY)
+   -------------------------------------------------------------------------- */
+.project-name-title {
+  color: #ffffff !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.35rem;
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.project-name-title:hover {
+  color: var(--primary-color) !important;
+}
+
+.project-github-link {
+  color: #a0aec0 !important;
+  font-size: 1.3rem;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.project-github-link:hover {
+  color: #ffffff !important;
+  transform: scale(1.15);
+}
+
+.image-project {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer !important;
+}
+
+.image-project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.image-project:hover .image-project-overlay {
+  opacity: 1;
+}
+
+.image-project-overlay span {
+  background: var(--primary-color);
+  padding: 8px 16px;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Project Modal Overlay */
+.project-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: fadeInModal 0.25s ease-out;
+}
+
+.project-modal-card {
+  background: #15181e;
+  color: #ffffff;
+  width: 100%;
+  max-width: 650px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 16px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  position: relative;
+  animation: slideUpModal 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 1;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.project-modal-close:hover {
+  background: var(--primary-color);
+  transform: scale(1.1);
+}
+
+.project-modal-image {
+  height: 260px;
+  width: 100%;
+  overflow: hidden;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  position: relative;
+}
+
+.project-modal-body {
+  padding: 25px 30px 30px;
+}
+
+.project-modal-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.project-modal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.project-modal-tag {
+  background: rgba(233, 98, 36, 0.15);
+  color: var(--primary-color);
+  border: 1px solid rgba(233, 98, 36, 0.3);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.project-modal-description {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #cbd5e1;
+  margin-bottom: 25px;
+}
+
+.project-modal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.project-modal-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.project-modal-btn-primary {
+  background: var(--primary-color);
+  color: #ffffff !important;
+}
+
+.project-modal-btn-primary:hover {
+  background: var(--hover-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(233, 98, 36, 0.4);
+  text-decoration: none;
+}
+
+.project-modal-btn-secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.project-modal-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+@keyframes fadeInModal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpModal {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   6. PAGE DÉDIÉE DE DÉTAILS D'UN PROJET (PROJECT DETAIL FULL PAGE)
+   -------------------------------------------------------------------------- */
+.project-detail-page {
+  min-height: 100vh;
+  background-color: #0d0f12;
+  color: #f1f5f9;
+  font-family: "Source Sans Pro", sans-serif;
+  padding-bottom: 60px;
+}
+
+.project-detail-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 8%;
+  background: rgba(13, 15, 18, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.project-detail-back-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.project-detail-back-btn:hover {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #ffffff;
+  transform: translateX(-4px);
+}
+
+.project-detail-back-btn-large {
+  padding: 14px 32px;
+  font-size: 1.1rem;
+}
+
+.project-detail-category-badge {
+  background: rgba(233, 98, 36, 0.15);
+  color: var(--primary-color);
+  border: 1px solid rgba(233, 98, 36, 0.35);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.project-detail-hero {
+  padding: 60px 0 40px;
+  background: radial-gradient(circle at 50% 20%, #1a1e27 0%, #0d0f12 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  text-align: center;
+}
+
+.project-detail-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+  letter-spacing: -1px;
+}
+
+.project-detail-summary {
+  font-size: 1.25rem;
+  color: #94a3b8;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.project-detail-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.project-detail-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.project-detail-btn-primary {
+  background: var(--primary-color);
+  color: #ffffff !important;
+  box-shadow: 0 8px 20px rgba(233, 98, 36, 0.35);
+}
+
+.project-detail-btn-primary:hover {
+  background: var(--hover-color);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(233, 98, 36, 0.5);
+  text-decoration: none;
+}
+
+.project-detail-btn-secondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.project-detail-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.project-detail-content {
+  margin-top: 50px;
+}
+
+.project-detail-card {
+  background: rgba(21, 24, 30, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 35px;
+  margin-bottom: 35px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.project-detail-card h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid rgba(233, 98, 36, 0.4);
+  padding-bottom: 10px;
+}
+
+.project-detail-description-text {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #cbd5e1;
+}
+
+/* Grille des variants (Web / Mobile / Desktop) */
+.project-variants-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.project-variant-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.project-variant-box:hover {
+  transform: translateY(-3px);
+  border-color: rgba(233, 98, 36, 0.5);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.project-variant-icon {
+  font-size: 2rem;
+  color: var(--primary-color);
+  background: rgba(233, 98, 36, 0.12);
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.project-variant-info h3 {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.project-variant-info p {
+  font-size: 0.95rem;
+  color: #94a3b8;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Badges technologies */
+.project-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.project-tech-badge {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #e2e8f0;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* Services list */
+.project-services-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.project-services-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  color: #cbd5e1;
+  font-size: 1rem;
+}
+
+.project-services-list li:last-child {
+  border-bottom: none;
+}
+
+/* Grille des captures d'écran */
+.project-screenshots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.project-screenshot-item {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-screenshot-item:hover {
+  transform: scale(1.02);
+}
+
+.project-screenshot-item img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
