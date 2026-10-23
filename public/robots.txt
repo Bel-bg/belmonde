@@ -1,5 +1,5 @@
 # Robots.txt for #beldev - Belmonde FIODEKANHOUN Portfolio
-# https://bel-bg.github.io/belmonde/
+# https://bel123.netlify.app/
 
 User-agent: *
 Allow: /
@@ -13,5 +13,5 @@ User-agent: Bingbot
 Allow: /
 
 # Sitemap
-Sitemap: https://bel-bg.github.io/belmonde/sitemap.xml
-Host: https://bel-bg.github.io/belmonde/
+Sitemap: https://bel123.netlify.app/sitemap.xml
+Host: https://bel123.netlify.app/
