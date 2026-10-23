@@ -49,6 +49,15 @@ body {
   text-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
 }
 
+.header-pseudo {
+  color: var(--primary-color) !important;
+  font-weight: 700;
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 0.85em;
+  text-shadow: 0 2px 10px rgba(233, 98, 36, 0.4);
+}
+
 .Header .line-1 {
   color: #e0e0e0 !important;
   border-right-color: var(--primary-color) !important;
@@ -187,6 +196,41 @@ body {
 .git-form input:focus,
 .git-form textarea:focus {
   border-color: var(--primary-color) !important;
+}
+
+.download-portfolio-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 2rem;
+  color: #fff !important;
+  background-color: var(--primary-color);
+  box-shadow: none;
+  outline: 0;
+  border: none;
+  margin-top: 20px;
+  margin-left: 20px;
+  text-decoration: none !important;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.download-portfolio-btn:hover {
+  background-color: var(--hover-color) !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+@media (max-width: 576px) {
+  .download-portfolio-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .Copy {

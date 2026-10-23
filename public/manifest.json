@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "#beldev",
+  "name": "#beldev - Belmonde FIODEKANHOUN Portfolio",
+  "description": "Portfolio officiel de #beldev (Belmonde FIODEKANHOUN), Développeur Web & Mobile Fullstack.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +21,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#e96224",
+  "background_color": "#000000"
 }

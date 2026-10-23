@@ -1,0 +1,16 @@
+/* TEAM */
+Developer: Belmonde FIODEKANHOUN
+Pseudo / Handle: #beldev (beldev)
+Role: Développeur Web & Mobile Fullstack
+Location: Cotonou, Bénin
+GitHub: https://github.com/Bel-bg
+LinkedIn: https://www.linkedin.com/in/belmonde-fiodekanhoun-54b5a2360/
+
+/* SITE */
+Site Name: #beldev - Belmonde FIODEKANHOUN Portfolio
+Canonical URL: https://bel-bg.github.io/belmonde/
+Language: French / Français
+Standards: HTML5, CSS3, ES6+, Schema.org JSON-LD, PWA
+Stack: React, Node.js, GSAP, AOS, CSS3
+Primary Hashtag: #beldev
+Primary Keywords: #beldev, beldev, Belmonde FIODEKANHOUN

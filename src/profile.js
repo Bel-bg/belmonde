@@ -6,6 +6,7 @@ const animation = {
 
 const header = {
   name: "Belmonde FIODEKANHOUN",
+  pseudo: "#beldev",
 };
 const background = {
   type: "Snow",
@@ -14,7 +15,7 @@ const background = {
 const section2title = "À propos de moi";
 const about = {
   paragraph:
-    "Passionné par l'univers du Web et du Mobile, j'observe, j'étudie et je conçois des solutions numériques performantes. Mon écosystème de prédilection tourne autour de JavaScript et de ses frameworks, que j'utilise pour créer des expériences utilisateur uniques et des applications robustes. Mon expertise me permet aujourd'hui de propulser des sites web avec React JS, de développer des applications mobiles cross-platform avec React Native, et de concevoir des API complètes avec Node.js / Express. Toujours à l'affût des nouvelles technologies, j'explore également la création d'applications Desktop (avec Rust via Tauri, et actuellement Java), ainsi que le mobile avec Flutter. Curieux et rigoureux, je vois chaque projet comme une opportunité d'apprendre et d'innover.",
+    "Passionné par l'univers du Web et du Mobile, connu sous le pseudo #beldev (Belmonde FIODEKANHOUN), j'observe, j'étudie et je conçois des solutions numériques performantes. Mon écosystème de prédilection tourne autour de JavaScript et de ses frameworks, que j'utilise pour créer des expériences utilisateur uniques et des applications robustes. Mon expertise me permet aujourd'hui de propulser des sites web avec React JS, de développer des applications mobiles cross-platform avec React Native, et de concevoir des API complètes avec Node.js / Express. Toujours à l'affût des nouvelles technologies, j'explore également la création d'applications Desktop (avec Rust via Tauri, et actuellement Java), ainsi que le mobile avec Flutter. Curieux et rigoureux, je vois chaque projet comme une opportunité d'apprendre et d'innover.",
 };
 
 const skillsBar = [
@@ -192,6 +193,45 @@ const projects = [
     ],
   },
   {
+    id: "alkoudra",
+    name: "Auto-école AL-KOUDRA",
+    skills: ["React", "Node.js", "Express", "PostgreSQL"],
+    url: "https://auto-ecole.axiomgroup.bj/",
+    category: "Logiciel de gestion & E-learning",
+    summary:
+      "Logiciel de gestion et plateforme de formation en ligne pour l'auto-école AL-KOUDRA à Cotonou.",
+    description:
+      "Solution complète développée pour l'auto-école AL-KOUDRA. Elle combine la gestion administrative (inscriptions, suivi des paiements, planning des cours et moniteurs) et une plateforme d'apprentissage pour les candidats (cours du code de la route, 50 séries audio, examens blancs interactifs et suivi personnalisé).",
+    variants: [
+      {
+        type: "Application Web & Plateforme E-learning",
+        desc: "Interface web responsive permettant aux candidats de suivre les cours de code, s'entraîner aux examens blancs et payer leurs formations.",
+      },
+      {
+        type: "Logiciel de gestion / Dashboard Admin",
+        desc: "Tableau de bord pour l'administration : gestion des élèves, planning des séances de conduite et de code, suivi financier et rapports.",
+      },
+    ],
+    technologies: [
+      "React",
+      "JavaScript / TypeScript",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "RESTful API",
+      "CSS3 / Responsive UI",
+    ],
+    services: [
+      "Gestion administrative et suivi des élèves",
+      "Module d'apprentissage et d'examens blancs en ligne",
+      "Intégration des paiements (Mobile Money & espèces)",
+      "Planification des cours et séances avec moniteurs",
+    ],
+    screenshots: [
+      "https://iad.microlink.io/U1mPNxsCGLIZSkf6LP84t4bn-zJ9pSJ78umhKNU4YWbsCqA67BxCv5A1ttRMFi1Dz7IzwhTqsEBDD3ieQDfz-A.png",
+    ],
+  },
+  {
     id: "musik",
     name: "Musik",
     skills: ["Tauri", "Desktop", "TypeScript", "UI / UX"],
@@ -233,14 +273,15 @@ const section5Title = "Me Contacter";
 const contact = {
   pitch:
     "Un projet en tête, une collaboration ou simplement envie d'échanger ? N'hésitez pas à m'envoyer un message via le formulaire ci-dessous ou directement via mes réseaux sociaux.",
-  copyright: "Belmonde FIODEKANHOUN",
+  copyright: "Belmonde FIODEKANHOUN (#beldev)",
   contactUrl: "",
 };
 
 const social = {
   github: "https://github.com/Bel-bg",
   linkedin: "https://www.linkedin.com/in/belmonde-fiodekanhoun-54b5a2360/",
-  resume: "https://github.com/Bel-bg",
+  resume: "https://drive.google.com/file/d/1OvBZ596S0JfyK56Z5UAiPGGf_MxERhgf/view?usp=sharing",
+  portfolioPdf: "https://drive.google.com/file/d/1OvBZ596S0JfyK56Z5UAiPGGf_MxERhgf/view?usp=sharing",
 };
 
 export {

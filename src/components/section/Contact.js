@@ -131,13 +131,27 @@ const Contact = () => {
                   required
                 ></textarea>
 
-                <button
-                  style={{ cursor: "pointer" }}
-                  type="submit"
-                  disabled={status.loading}
-                >
-                  {status.loading ? "Envoi en cours..." : "Envoyer le message"}
-                </button>
+                <div className="d-flex flex-wrap align-items-center">
+                  <button
+                    style={{ cursor: "pointer" }}
+                    type="submit"
+                    disabled={status.loading}
+                  >
+                    {status.loading ? "Envoi en cours..." : "Envoyer le message"}
+                  </button>
+
+                  {social.portfolioPdf && (
+                    <a
+                      href={social.portfolioPdf}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="download-portfolio-btn"
+                      title="Télécharger mon portfolio (PDF)"
+                    >
+                      Télécharger mon portfolio
+                    </a>
+                  )}
+                </div>
 
                 {status.success && (
                   <p
@@ -187,11 +201,10 @@ const Contact = () => {
                   )}
                   {social.resume && (
                     <a
-                      title="Télécharger mon CV"
+                      title="Télécharger mon portfolio (Google Drive)"
                       rel="noopener noreferrer"
                       target="_blank"
                       href={social.resume}
-                      download
                     >
                       <i className="fas fa-file-pdf"></i>
                     </a>
