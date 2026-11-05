@@ -1,4 +1,4 @@
-# Robots.txt for #beldev - Belmonde FIODEKANHOUN Portfolio
+# Robots.txt for beldev - Belmonde FIODEKANHOUN Portfolio
 # https://bel123.netlify.app/
 
 User-agent: *

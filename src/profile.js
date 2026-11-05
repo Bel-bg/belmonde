@@ -6,7 +6,7 @@ const animation = {
 
 const header = {
   name: "Belmonde FIODEKANHOUN",
-  pseudo: "#beldev",
+  pseudo: "beldev",
 };
 const background = {
   type: "Snow",
@@ -15,7 +15,7 @@ const background = {
 const section2title = "À propos de moi";
 const about = {
   paragraph:
-    "Passionné par l'univers du Web et du Mobile, connu sous le pseudo #beldev (Belmonde FIODEKANHOUN), j'observe, j'étudie et je conçois des solutions numériques performantes. Mon écosystème de prédilection tourne autour de JavaScript et de ses frameworks, que j'utilise pour créer des expériences utilisateur uniques et des applications robustes. Mon expertise me permet aujourd'hui de propulser des sites web avec React JS, de développer des applications mobiles cross-platform avec React Native, et de concevoir des API complètes avec Node.js / Express. Toujours à l'affût des nouvelles technologies, j'explore également la création d'applications Desktop (avec Rust via Tauri, et actuellement Java), ainsi que le mobile avec Flutter. Curieux et rigoureux, je vois chaque projet comme une opportunité d'apprendre et d'innover.",
+    "Passionné par l'univers du Web et du Mobile, connu sous le pseudo beldev (Belmonde FIODEKANHOUN), j'observe, j'étudie et je conçois des solutions numériques performantes. Mon écosystème de prédilection tourne autour de JavaScript et de ses frameworks, que j'utilise pour créer des expériences utilisateur uniques et des applications robustes. Mon expertise me permet aujourd'hui de propulser des sites web avec React JS, de développer des applications mobiles cross-platform avec React Native, et de concevoir des API complètes avec Node.js / Express. Toujours à l'affût des nouvelles technologies, j'explore également la création d'applications Desktop (avec Rust via Tauri, et actuellement Java), ainsi que le mobile avec Flutter. Curieux et rigoureux, je vois chaque projet comme une opportunité d'apprendre et d'innover.",
 };
 
 const skillsBar = [
@@ -273,7 +273,7 @@ const section5Title = "Me Contacter";
 const contact = {
   pitch:
     "Un projet en tête, une collaboration ou simplement envie d'échanger ? N'hésitez pas à m'envoyer un message via le formulaire ci-dessous ou directement via mes réseaux sociaux.",
-  copyright: "Belmonde FIODEKANHOUN (#beldev)",
+  copyright: "Belmonde FIODEKANHOUN (beldev)",
   contactUrl: "",
 };
 
