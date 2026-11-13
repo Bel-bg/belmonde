@@ -8,7 +8,6 @@ const Header = () => {
       <div className="Header">
         <h1>
           {`Je suis ${header.name}`}
-          {header.pseudo && <span className="header-pseudo"> ({header.pseudo})</span>}
         </h1>
         <p className="line-1 anim-typewriter">bienvenue sur mon portfolio... </p>
         <Button text="Découvrir mon profil" link="#about" />

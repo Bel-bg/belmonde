@@ -25,10 +25,10 @@ const skillsBar = [
   },
   {
     name: "CSS3",
-    faClass: "fab fa-css3",
+    faClass: "fab fa-css3-alt",
   },
   {
-    name: "Javascript",
+    name: "JavaScript",
     faClass: "fab fa-js",
   },
   {
@@ -37,7 +37,7 @@ const skillsBar = [
   },
   {
     name: "Flutter",
-    faClass: "fab fa-flutter",
+    faClass: "fa-brands fa-flutter fab fa-flutter",
   },
   {
     name: "Node.js",
@@ -265,6 +265,50 @@ const projects = [
     ],
     screenshots: [
       "https://iad.microlink.io/U8-RjcjVR1DRrcED2tHj88mS9a0_nCODvrltTA7giAD9xRfn-EZez7BEVuRzN8TAK4eCbrk3COH0nVHbGdCcOA.png",
+    ],
+  },
+  {
+    id: "akademia",
+    name: "Akademia",
+    skills: ["React", "TypeScript", "PWA", "Supabase", "EdTech"],
+    url: "https://akademia.monitor.sarl/",
+    category: "EdTech & E-learning Universitaire",
+    summary:
+      "Application web et PWA d'apprentissage, d'entraînement par QCM et de révision en vue des compositions universitaires à l'ENEAM.",
+    description:
+      "Akademia est une plateforme interactive développée pour accompagner les étudiants de l'ENEAM dans la préparation de leurs compositions et examens universitaires. Elle propose des modules de révision par matière, des banques de QCM interactifs, des défis chronométrés, des battles inter-filières et un classement pour stimuler l'apprentissage et l'excellence académique.",
+    variants: [
+      {
+        type: "Web App & PWA Responsive",
+        desc: "Application progressive accessible sur mobile et desktop avec mode hors-ligne, cours et fiches de révision.",
+      },
+      {
+        type: "Module QCM & Examens blancs",
+        desc: "Entraînements ciblés par matière et filière, simulation d'épreuves universitaires avec correction détaillée et suivi des scores.",
+      },
+      {
+        type: "Gamification & Battles de filières",
+        desc: "Défis éclair entre étudiants, points d'expérience (XP), badges de progression et classement universitaire compétitif.",
+      },
+    ],
+    technologies: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "PWA (Progressive Web App)",
+      "Supabase",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "RESTful API",
+    ],
+    services: [
+      "Conception et développement web & PWA",
+      "Moteur interactif de QCM et évaluations",
+      "Architecture cloud temps réel et authentification",
+      "Gamification et système de classement inter-filières",
+    ],
+    screenshots: [
+      "https://iad.microlink.io/9Y2JbnYkySQ3g2OIFImdxHRlYzWbrzlW2NQcBS2IMWvxqVJ2On0tFhwMxwloySP4SaodSjdEY02voSRxc4Q4CA.png",
     ],
   },
 ];

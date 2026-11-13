@@ -90,23 +90,111 @@ body {
   color: var(--primary-color) !important;
 }
 
-#about .skill__square i,
-#about .skill__square svg {
-  color: #555555 !important;
-  transition:
-    transform 0.25s ease,
-    color 0.25s ease;
+/* GitHub Stats Card */
+.github-stats-card {
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
-#about .skill__square:hover i,
-#about .skill__square:hover svg {
-  color: var(--primary-color) !important;
+.github-stats-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.github-stats-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Skills Grid & Items */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px 12px;
+  align-items: start;
+  justify-items: center;
+  width: 100%;
+}
+
+@media (max-width: 575px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 10px;
+  }
+}
+
+.skill__item {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  text-align: center !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 8px 4px !important;
+  transition: transform 0.25s ease !important;
+  cursor: default;
+}
+
+.skill__item:hover {
   transform: translateY(-4px);
 }
 
-#about .skill__square h6 {
+.skill__icon-wrapper {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill__item .skill__icon,
+.skill__item i {
+  font-size: 42px !important;
+  height: auto !important;
+  line-height: 1 !important;
+  color: #555555 !important;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.skill__item .skill__svg,
+.skill__item svg {
+  width: 42px !important;
+  height: 42px !important;
+  min-height: auto !important;
+  color: #555555 !important;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.skill__item:hover .skill__icon,
+.skill__item:hover i,
+.skill__item:hover .skill__svg,
+.skill__item:hover svg {
+  color: var(--primary-color) !important;
+  transform: scale(1.08);
+}
+
+.skill__item .skill__label,
+.skill__item h6 {
   color: #222222 !important;
-  font-weight: 600;
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
+  margin-top: 8px !important;
+  margin-bottom: 0 !important;
+  text-align: center !important;
+  word-break: normal;
+  line-height: 1.25 !important;
+  transition: color 0.25s ease;
+}
+
+.skill__item:hover .skill__label,
+.skill__item:hover h6 {
+  color: var(--primary-color) !important;
 }
 
 /* --------------------------------------------------------------------------

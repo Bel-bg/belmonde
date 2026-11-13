@@ -23,13 +23,13 @@ const Project = ({ id, name, url, skills, description, demoUrl, onSelect }) => {
         </h2>
         {url && (
           <a
-            title="Voir le code source"
+            title="Visiter le site"
             className="project-github-link"
             rel="noopener noreferrer"
             target="_blank"
             href={url}
           >
-            <i className="fab fa-globe"></i>
+            <i className="fas fa-globe"></i>
           </a>
         )}
       </div>
